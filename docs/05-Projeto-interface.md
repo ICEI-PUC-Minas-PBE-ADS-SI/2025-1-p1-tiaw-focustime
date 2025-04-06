@@ -18,7 +18,7 @@ Fluxo de usuário (user flow) é uma técnica que permite ao desenvolvedor mapea
 ![User Flow - Ipad](https://github.com/user-attachments/assets/2148cb2a-26e9-424a-a424-7b6b312b20a4)
 ![User Flow - Desktop](https://github.com/user-attachments/assets/efc0e9d3-4ef7-4095-be63-6846fa50a4b3)
 
-![Link para entrar no Figma e visualizar o trabalho](https://www.figma.com/design/f113X5XHLqPEgf5wQCnbSC/TIAW?node-id=55-465&t=7PDQi6izrRPCfoD1-1)
+![Link para entrar no Figma e visualizar o trabalho]([https://www.figma.com/design/f113X5XHLqPEgf5wQCnbSC/TIAW?node-id=55-465&t=7PDQi6izrRPCfoD1-1](https://www.figma.com/design/f113X5XHLqPEgf5wQCnbSC/TIAW?node-id=0-1&t=7PDQi6izrRPCfoD1-1))
 
 
 > **Links úteis**:
@@ -50,4 +50,4 @@ São protótipos usados no design de interface para sugerir a estrutura de um si
 
 **✳️✳️✳️ COLOQUE AQUI UM IFRAME COM SEU PROTÓTIPO INTERATIVO ✳️✳️✳️**
 
-✅ ![Protótipo Interativo FocusTime ](https://www.figma.com/proto/f113X5XHLqPEgf5wQCnbSC/TIAW?node-id=0-1&t=7PDQi6izrRPCfoD1-1) 
+✅ ![Protótipo Interativo FocusTime ]([https://www.figma.com/proto/f113X5XHLqPEgf5wQCnbSC/TIAW?node-id=0-1&t=7PDQi6izrRPCfoD1-1](https://www.figma.com/proto/f113X5XHLqPEgf5wQCnbSC/TIAW?node-id=0-1&t=7PDQi6izrRPCfoD1-1)) 
