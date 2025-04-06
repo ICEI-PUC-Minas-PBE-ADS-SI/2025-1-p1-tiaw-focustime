@@ -5,7 +5,8 @@
 
 ## Slides
 
-Coloque aqui o conjunto de slides.
+[Baixar o PDF do trabalho](./SlideTIAW.pdf)
+
 
 > O arquivo deve estar no formato PDF e conter a apresentação completa do projeto, abordando todos os itens trabalhados nos demais artefatos. 
 
