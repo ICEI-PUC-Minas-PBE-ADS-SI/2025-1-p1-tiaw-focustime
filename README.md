@@ -1,25 +1,26 @@
 # Nome do projeto
+Gestão de Tempo - FocusTime
 
-`CURSO: Coloque o nome do curso aqui, sem abreviações`
+CURSO: Sistemas de Informação
 
-`DISCIPLINA: Trabalho Interdisciplinar Aplicações Web`
+DISCIPLINA: Trabalho Interdisciplinar: Aplicações Web
 
-`Xº semestre/ANO`
+1º semestre/ANO
 
-Escreva um ou dois parágrafos resumindo o objetivo do seu projeto.
+Escreva um ou dois parágrafos resumindo o objetivo do seu projeto:
+  Criar um site com funcionalidades como calendários, listas de tarefas e lembretes para auxiliar os usuários na gestão eficiente do tempo.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Ana Luiza Damasceno Miranda
+* Davi Coutinho de Amorim Fecundo
+* Fernando Otávio Meyer Pires Neto
+* Gabriel Andrade Lemos
+* Matheus Henrique Borges Ferreira
 
 ## Professor
 
-* Nome completo do(a) professor(a)
+* Amália Soares Vieira de Vasconcelos
 
 ## Instruções de utilização
 
