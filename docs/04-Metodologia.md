@@ -1,7 +1,8 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="03-Product-design.md"> Product design</a></span>
+<span style="color:red">Pré-requisitos: <a href="03-Product-desig"> Product design</a></span>
+![Imagem Metodologia](https://github.com/user-attachments/assets/9efd6024-c177-4b69-b05e-115ba97c5d5c)
 
 Descreva aqui a metodologia de trabalho do grupo para abordar o problema. Inclua definições sobre os ambientes de trabalho utilizados pela equipe para desenvolver o projeto. Isso abrange a relação dos ambientes utilizados, a estrutura para a gestão do código-fonte, além da definição do processo e das ferramentas por meio dos quais a equipe se organiza (gestão de equipes).
 
