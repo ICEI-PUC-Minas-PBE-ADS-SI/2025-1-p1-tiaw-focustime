@@ -1,0 +1,460 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff5e9;
+    color: #222;
+}
+
+
+/* Cabeçalho */
+header {
+    background-color: white;
+    padding: 10px 30px;
+    display: flex;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header div a {
+    text-decoration: none;
+    vertical-align: middle;
+    background-color: white;
+    color: #ff7c2d;
+}
+
+header nav {
+    background-color: white;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 40px;
+    color: #ff7c2d;
+    background-color: white;
+}
+
+.logo img {
+    vertical-align: middle;
+    margin-right: 8px;
+    width: 60px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ff7c2d;
+    background-color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.login a {
+    margin: 0 10px;
+    color: #ff7c2d;
+    background-color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+nav a.active {
+    background-color: #ff7c2d;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    background-color: white;
+}
+
+.icon a {
+    font-size: 30px;
+    text-align: end;
+}
+
+.icon a b {
+    background-color: white;
+    color: #ff7f2a;
+}
+
+
+/* Parte 1 e 2 - CSS GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    gap: 8px;
+}
+
+.comece_agora {
+    grid-column: span 3 / span 3;
+    grid-row: span 5 / span 5;
+    padding: 35px;
+}
+
+.comece_agora h1 b {
+    font-size: 60px;
+    width: 90%;
+    z-index: 1;
+    width: 100%;
+    color: #ff7c2d;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.comece_agora a button {
+    font-size: 100%;
+    padding: 8px;
+    border-radius: 25px;
+    background-color: #ff7c2d;
+    color: #fff5e9;
+    border-color: #ff7c2d;
+}
+
+.comece_agora a button:hover {
+    color: #222;
+    background-color: #ff7c2d;
+}
+
+.imagem_comece_agora {
+    grid-column: span 2 / span 2;
+    grid-row: span 5 / span 5;
+    grid-column-start: 4;
+    padding-left: 30px;
+}
+
+
+/* Parte 3 - CSS GRID */
+.funcoes {
+    grid-column: span 5 / span 5;
+    grid-row: span 2 / span 2;
+    grid-row-start: 6;
+    text-align: center;
+}
+
+.funcoes div {
+    display: inline-block;
+    width: 33%;
+}
+
+.funcoes div h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ff7c2d;
+}
+
+.funcoes div p {
+    color: #222;
+}
+
+.funcoes button {
+    font-size: 40px;
+    border-radius: 100%;
+    border-color: #ff7c2d;
+}
+
+.funcoes button a {
+    background-color: #fff5e9;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.funcoes button a:hover {
+    color: #222;
+}
+
+
+/* Parte 4 - CSS GRID */
+.depoimentos {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 8;
+    padding: 35px 70px 0 70px;
+}
+
+.depoimentos h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #ff7c2d;
+    color: #fff5e9;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.container-slider {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 9;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 35px;
+    margin-top: -80px;
+}
+
+.container-depoimentos {
+    grid-row-start: 12;
+    position: relative;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.slider {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #ff7c2d;
+    color: #fff5e9;
+}
+
+.slider.on {
+    opacity: 1;
+}
+
+#prev-button,
+#next-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#prev-button img,
+#next-button img {
+    width: 100%;
+    height: 100%;
+}
+
+#prev-button {
+    transform: rotate(180deg);
+}
+
+.imagem2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    padding-left: 60px;
+}
+
+.imagem2 img {
+    height: 90%;
+}
+
+.linha {
+    grid-column: span 5 / span 5;
+    grid-row: auto;
+}
+
+
+/* Parte 5 - CSS GRID */
+.perguntas {
+    grid-column: span 2 / span 2;
+    grid-row: auto;
+    grid-column-start: 3;
+    grid-row-start: 12;
+    padding: 25px;
+    margin-top: -25px;
+}
+
+.perguntas h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #ff7c2d;
+    color: #fff5e9;
+    border-radius: 30px;
+    text-align: center;
+    padding: 5px;
+}
+
+.perguntas p b {
+    color: #ff7f2a;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.perguntas p {
+    color: #222;
+    text-align: justify;
+}
+
+.imagem3 {
+    grid-column: span 1 / span 1;
+    grid-row: auto;
+    grid-column-start: 5;
+    grid-row-start: 12;
+    margin-top: 40px;
+}
+
+.imagem3 img {
+    height: 300px;
+}
+
+.equipe {
+    grid-column: span 2 / span 2;
+    grid-row: auto;
+    grid-column-start: 1;
+    grid-row-start: 12;
+    padding: 25px 25px 0 25px;
+    z-index: 1;
+    margin-top: -25px;
+}
+
+.equipe h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #ff7c2d;
+    color: #fff5e9;
+    border-radius: 30px;
+    text-align: center;
+    padding: 5px;
+}
+
+.equipe .fotos {
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+    margin-left: 40px;
+    padding-bottom: 5px;
+}
+
+.linha_vertical {
+    grid-column: span 2 / span 2;
+    grid-row: auto;
+    grid-column-start: 2;
+    grid-row-start: 12;
+    margin-top: -10px;
+}
+
+/* Parte 6 - Rodapé */
+.rodape {
+    grid-column: span 5 / span 5;
+    grid-row: span 2 / span 2;
+    grid-row-start: 15;
+}
+
+.rodape span {
+    color: #222;
+    display: inline;
+    justify-content: space-between;
+}
+
+.rodape span a {
+    background-color: #fff5e9;
+    color: #222;
+    font-size: 15px;
+}
+
+.rodape span a:hover {
+    color: #ff7c2d;
+}
+
+.rodape img {
+    vertical-align: middle;
+    margin-right: 8px;
+    width: 40px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsividade - mobile */
+@media (max-width: 767px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 30px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+    }
+
+    nav,
+    .login,
+    .icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .comece_agora h1 b {
+        font-size: 50px;
+        text-align: justify;
+    }
+
+    .comece_agora,
+    .imagem_comece_agora,
+    .funcoes,
+    .depoimentos,
+    .container-slider,
+    .perguntas,
+    .imagem3,
+    .equipe,
+    .rodape {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .imagem_comece_agora,
+    .imagem2,
+    .imagem3 {
+        text-align: center;
+    }
+
+    .imagem_comece_agora img,
+    .imagem2 img,
+    .imagem3 img,
+    .equipe .fotos {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .depoimentos {
+        visibility: hidden;
+    }
+
+    .funcoes div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .linha_vertical,
+    .imagem2 {
+        display: none;
+    }
+
+    .container-depoimentos {
+        width: 100%;
+    }
+
+    .slider {
+        font-size: 1rem;
+    }
+
+    .rodape {
+        text-align: center;
+    }
+}
