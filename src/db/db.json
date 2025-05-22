@@ -1,25 +1,64 @@
 {
-  "usuarios": [
-    {
-      "id": 1,
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
-    },
-    {
-      "id": 2,
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
-    },
-    {
-      "login": "rommel",
-      "senha": "123",
-      "nome": "Rommel",
-      "email": "rommel@gmail.com",
-      "id": 3
-    }
-  ]
+    "usuarios": [
+        {
+            "id": 1,
+            "nome": "Ana Luiza",
+            "email": "analuiza@email.com",
+            "senha": "******"
+        },
+        {
+            "id": 2,
+            "nome": "Matheus Henrique",
+            "email": "matheushenrique@email.com",
+            "senha": "******"
+        },
+        {
+            "id": 3,
+            "nome": "Fernando Otávio",
+            "email": "fernandootavio@email.com",
+            "senha": "******"
+        }
+    ],
+    "tarefas": [
+        {
+            "id": 1,
+            "titulo": "Estudar 1h",
+            "concluida": true
+        },
+        {
+            "id": 2,
+            "titulo": "Caminhada 30min",
+            "concluida": true
+        },
+        {
+            "id": 3,
+            "titulo": "Trabalho",
+            "concluida": false
+        },
+        {
+            "id": 4,
+            "titulo": "Prova",
+            "concluida": false
+        }
+    ],
+    "eventos": [
+        {
+            "id": 1,
+            "data": "2025-03-29",
+            "hora": "08:00",
+            "descricao": "Estudar programação"
+        },
+        {
+            "id": 2,
+            "data": "2025-04-13",
+            "hora": "09:30",
+            "descricao": "Reunião trabalho"
+        },
+        {
+            "id": 3,
+            "data": "2025-05-09",
+            "hora": "12:00",
+            "descricao": "Almoço"
+        }
+    ] 
 }
