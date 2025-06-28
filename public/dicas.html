@@ -146,10 +146,10 @@
 
         async function carregarFrases() {
             try {
-                const resposta = await fetch('https://focustime-2ha8.onrender.com/frases');
+                const resposta = await fetch('https://focustime-gk06.onrender.com/frases');
                 frases = await resposta.json();
                 mostrarFrase();
-                setInterval(trocarFrase, 5000); // troca a cada 5 segundos
+                setInterval(trocarFrase, 5000);
             } catch (erro) {
                 frasesElement.innerText = "Não foi possível carregar frases.";
                 console.error(erro);
