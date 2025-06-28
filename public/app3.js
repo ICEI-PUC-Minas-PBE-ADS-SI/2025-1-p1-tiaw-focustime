@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", function () {
             })
             .then(() => {
                 alert(id ? "✅ Evento atualizado!" : "✅ Evento salvo com sucesso!");
-                window.location.href = "Agenda.html";
+                window.location.href = "agenda.html";
             })
             .catch(() => {
                 alert("❌ Falha ao salvar o evento.");
