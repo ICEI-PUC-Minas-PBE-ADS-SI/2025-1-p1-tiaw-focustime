@@ -1,386 +1,446 @@
 * {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
     background-color: #fff5e9;
     color: #222;
+    line-height: 1.6;
 }
 
 /* Cabeçalho */
 header {
     background-color: white;
-    padding: 10px 30px;
+    padding: 15px 5%;
     display: flex;
-    margin: 20px auto;
-    width: 90%;
-    border-radius: 30px;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-header div a {
-    text-decoration: none;
-    vertical-align: middle;
-    background-color: white;
-    color: #ff7c2d;
-}
-
-header nav {
-    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-weight: bold;
-    font-size: 40px;
-    color: #ff7c2d;
-    background-color: white;
+    font-size: 1.8rem;
 }
 
 .logo img {
-    vertical-align: middle;
-    margin-right: 8px;
-    width: 60px;
+    height: 50px;
+    width: auto;
+}
+
+.logo a {
+    color: #ff7c2d;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
 }
 
 nav a {
-    margin: 0 10px;
     text-decoration: none;
-    color: #ff7c2d;
-    background-color: white;
+    color: #555;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.1rem;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
 }
 
-.login a {
-    color: #ff7c2d;
-    background-color: white;
-    font-weight: 600;
-    font-size: 20px;
-    margin-left: 70px;
-}
-
-nav a.active {
+nav a.active,
+nav a:hover {
     background-color: #ff7c2d;
     color: white;
-    padding: 5px 15px;
-    border-radius: 15px;
 }
 
 .icons {
     display: flex;
     gap: 15px;
-    background-color: white;
 }
 
 .icon a {
-    font-size: 30px;
-    text-align: end;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #ff7c2d;
+    transition: transform 0.3s;
 }
 
-.icon a b {
-    background-color: white;
-    color: #ff7f2a;
+.icon a:hover {
+    transform: scale(1.2);
 }
 
-
-/* Parte 1 e 2 - CSS GRID */
+/* Grid Principal */
 .grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto;
-    gap: 8px;
+    gap: 20px;
+    padding: 20px;
 }
 
+/* Seção Comece Agora */
 .comece_agora {
-    grid-column: span 3 / span 3;
-    grid-row: span 5 / span 5;
-    padding: 35px;
+    grid-column: span 3;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .comece_agora h1 b {
-    font-size: 60px;
-    width: 90%;
-    z-index: 1;
-    width: 100%;
-    color: #ff7c2d;
+    font-size: 3rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #222;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    display: block;
 }
 
 .comece_agora a button {
-    font-size: 100%;
-    padding: 8px;
-    border-radius: 25px;
     background-color: #ff7c2d;
-    color: #fff5e9;
-    border-color: #ff7c2d;
+    color: #222;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: fit-content;
+    font-weight: bold;
 }
 
 .comece_agora a button:hover {
-    color: #222;
-    background-color: #ff7c2d;
+    color: white;
+}
+
+.comece_agora a {
+    width: 35%;
+}
+
+.comece_agora a:hover {
+    background-color: #fff5e9;
 }
 
 .imagem_comece_agora {
-    grid-column: span 2 / span 2;
-    grid-row: span 5 / span 5;
-    grid-column-start: 4;
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-left: 30px;
 }
 
+.imagem_comece_agora img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20%;
+}
 
-/* Parte 3 - CSS GRID */
+/* Seção Funções */
 .funcoes {
-    grid-column: span 5 / span 5;
-    grid-row: span 2 / span 2;
-    grid-row-start: 6;
+    grid-column: span 5;
     text-align: center;
+    padding: 40px 0;
 }
 
 .funcoes div {
     display: inline-block;
-    width: 33%;
-}
-
-.funcoes div h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #ff7c2d;
-}
-
-.funcoes div p {
-    color: #222;
+    width: 30%;
+    vertical-align: top;
+    padding: 0 20px;
 }
 
 .funcoes button {
-    font-size: 40px;
-    border-radius: 100%;
-    border-color: #ff7c2d;
+    background-color: #ff7c2d;
+    color: white;
+    border: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
 }
 
-.funcoes button a {
-    background-color: #fff5e9;
-    vertical-align: middle;
-    font-size: 20px;
+.funcoes button:hover {
+    transform: rotate(10deg) scale(1.1);
+    background-color: #e66a22;
 }
 
-.funcoes button a:hover {
+.funcoes h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
     color: #222;
 }
 
+.funcoes p {
+    color: #555;
+}
 
-/* Parte 4 - CSS GRID */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ff7c2d, transparent);
+    margin: 40px 0;
+}
+
+/* Depoimentos */
 .depoimentos {
-    grid-column: span 3 / span 3;
-    grid-row: span 2 / span 2;
-    grid-column-start: 1;
-    grid-row-start: 8;
-    padding: 35px 70px 0 70px;
+    grid-column: span 3;
+    text-align: center;
 }
 
 .depoimentos h2 {
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.depoimentos h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
     background-color: #ff7c2d;
-    color: #fff5e9;
-    border-radius: 30px;
-    padding: 5px;
+    margin: 15px auto;
+    border-radius: 2px;
 }
 
 .container-slider {
-    grid-column: span 3 / span 3;
-    grid-row: span 2 / span 2;
-    grid-column-start: 1;
-    grid-row-start: 9;
+    grid-column: span 3;
     display: flex;
-    width: 100%;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    padding: 35px;
-    margin-top: -80px;
+    gap: 30px;
 }
 
 .container-depoimentos {
-    grid-row-start: 12;
     position: relative;
-    width: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.container-depoimentos p strong {
-    background-color: #ff7c2d;
-    color: #fff5e9;
+    width: 100%;
+    min-height: 200px;
 }
 
 .slider {
-    opacity: 0;
     position: absolute;
     width: 100%;
-    text-align: center;
-    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    transition: opacity 0.5s ease;
     font-size: 1.2rem;
-    border-radius: 10px;
-    padding: 1rem;
-    background-color: #ff7c2d;
-    color: #fff5e9;
+    line-height: 1.6;
+    color: #555;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .slider.on {
     opacity: 1;
 }
 
+.slider strong {
+    display: block;
+    margin-top: 20px;
+    color: #ff7c2d;
+    font-style: italic;
+}
+
 #prev-button,
 #next-button {
-    width: 30px;
-    height: 30px;
+    background: none;
     border: none;
-    background-color: transparent;
     cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#prev-button:hover,
+#next-button:hover {
+    transform: scale(1.2);
 }
 
 #prev-button img,
 #next-button img {
-    width: 100%;
-    height: 100%;
+    width: 40px;
+    height: 40px;
 }
 
-#prev-button {
+#prev-button img {
     transform: rotate(180deg);
 }
 
 .imagem2 {
-    grid-column: span 2 / span 2;
-    grid-row: span 2 / span 2;
-    grid-column-start: 4;
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-left: 60px;
+    margin-top: -110px;
 }
 
 .imagem2 img {
-    height: 90%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 20%;
 }
 
-.linha {
-    grid-column: span 5 / span 5;
-    grid-row: auto;
-}
-
-
-/* Parte 5 - CSS GRID */
-.perguntas {
-    grid-column: span 2 / span 2;
-    grid-row: auto;
-    grid-column-start: 3;
-    grid-row-start: 12;
-    padding: 25px;
-    margin-top: -25px;
-}
-
-.perguntas h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #ff7c2d;
-    color: #fff5e9;
-    border-radius: 30px;
-    text-align: center;
-    padding: 5px;
-}
-
-.perguntas p b {
-    color: #ff7f2a;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.perguntas p {
-    color: #222;
-    text-align: justify;
-}
-
-.imagem3 {
-    grid-column: span 1 / span 1;
-    grid-row: auto;
-    grid-column-start: 5;
-    grid-row-start: 12;
-    margin-top: 40px;
-}
-
-.imagem3 img {
-    height: 300px;
-}
-
+/* Equipe */
 .equipe {
-    grid-column: span 2 / span 2;
-    grid-row: auto;
-    grid-column-start: 1;
+    grid-column: span 2;
     grid-row-start: 12;
-    padding: 25px 25px 0 25px;
-    z-index: 1;
-    margin-top: -25px;
+    text-align: center;
+    padding: 25px;
 }
 
 .equipe h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.equipe h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
     background-color: #ff7c2d;
-    color: #fff5e9;
-    border-radius: 30px;
-    text-align: center;
-    padding: 5px;
+    margin: 15px auto;
+    border-radius: 2px;
 }
 
-.equipe .fotos {
-    width: 35%;
-    height: 35%;
+.fotos {
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    margin-left: 40px;
-    padding-bottom: 5px;
+    object-fit: cover;
+    margin: 10px;
+    border: 3px solid #ff7c2d;
+    transition: transform 0.3s;
 }
 
-.linha_vertical {
-    grid-column: span 2 / span 2;
-    grid-row: auto;
-    grid-column-start: 2;
+.fotos:hover {
+    transform: scale(1.1);
+}
+
+/* Perguntas Frequentes */
+.perguntas {
+    grid-column: span 2;
     grid-row-start: 12;
-    margin-top: -10px;
+    padding: 25px;
 }
 
-/* Parte 6 - Rodapé */
+.perguntas h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #222;
+    text-align: center;
+}
+
+.perguntas h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #ff7c2d;
+    margin: 15px auto;
+    border-radius: 2px;
+}
+
+.perguntas p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.perguntas p b {
+    color: #ff7c2d;
+    font-size: 1.1rem;
+}
+
+.imagem3 {
+    grid-column: span 1;
+    grid-row-start: 12;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem3 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Rodapé */
 .rodape {
-    grid-column: span 5 / span 5;
-    grid-row: span 2 / span 2;
-    grid-row-start: 15;
-    padding: 5px;
+    grid-row-start: 13;
+    grid-column: span 5;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f8f8f8;
+    margin-top: -10px;
+    box-shadow: 0 4px 15px #e66a22;
+    border-radius: 10px;
 }
 
 .rodape span {
-    color: #222;
-    display: inline;
-    justify-content: space-between;
+    margin: 0 15px;
+    color: #666;
 }
 
-.rodape span a {
-    background-color: #fff5e9;
-    color: #222;
-    font-size: 15px;
+.rodape a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-.rodape span a:hover {
+.rodape a:hover {
     color: #ff7c2d;
+    background-color: #f8f8f8;
 }
 
 .rodape img {
+    height: 30px;
     vertical-align: middle;
-    margin-right: 8px;
-    width: 40px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
+    margin-right: 10px;
 }
 
 
+/* Login e Cadastro */
+.text-center,
+.mb-4 {
+    text-align: center;
+}
 
-/* Cadastro */
+.auth-container {
+    height: 180vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #ff7c2d;
+    background: white;
+}
+
+.form-control:focus {
+    border-color: #ff7c2d;
+    box-shadow: 0 0 0 0.25rem #ff7c2d;
+}
+
 .body {
     display: flex;
     align-items: center;
@@ -457,6 +517,10 @@ input {
     justify-content: center;
     align-items: center;
     color: #999;
+}
+
+.photo-placeholder img {
+    width: 100%;
 }
 
 .photo-actions {
@@ -568,9 +632,7 @@ input {
 }
 
 
-
-
-/* Responsividade - mobile */
+/* Responsividade */
 @media (max-width: 767px) {
     .grid {
         display: flex;
@@ -581,23 +643,24 @@ input {
 
     header {
         flex-direction: column;
+        width: 100%;
         align-items: center;
         text-align: center;
-        gap: 8px;
+        position: static;
+        gap: 15px;
     }
 
     nav,
-    .login,
     .icons {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 8px;
+        gap: 10px;
     }
 
     .comece_agora h1 b {
-        font-size: 50px;
-        text-align: justify;
+        font-size: 2rem;
+        text-align: center;
     }
 
     .comece_agora,
@@ -610,32 +673,29 @@ input {
     .equipe,
     .rodape {
         width: 100%;
-        padding: 15px;
+        padding: 20px;
         box-sizing: border-box;
+    }
+
+    .funcoes div {
+        width: 100%;
+        margin-bottom: 30px;
     }
 
     .imagem_comece_agora,
     .imagem2,
     .imagem3 {
         text-align: center;
+        padding-left: 0;
     }
 
-    .imagem_comece_agora img,
-    .imagem2 img,
-    .imagem3 img,
-    .equipe .fotos {
-        width: 100%;
-        height: auto;
-        border-radius: 20px;
+    .equipe {
+        margin-bottom: 40px;
     }
 
-    .depoimentos {
-        visibility: hidden;
-    }
-
-    .funcoes div {
-        width: 100%;
-        margin-bottom: 20px;
+    a .fotos {
+        width: 100px;
+        height: 100px;
     }
 
     .linha_vertical,
@@ -645,13 +705,12 @@ input {
 
     .container-depoimentos {
         width: 100%;
+        margin-top: -50px;
+        margin-bottom: 120px;
     }
 
     .slider {
         font-size: 1rem;
-    }
-
-    .rodape {
-        text-align: center;
+        padding: 20px;
     }
 }

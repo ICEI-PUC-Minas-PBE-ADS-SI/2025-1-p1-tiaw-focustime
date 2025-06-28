@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style3.css">
     <script src="app.js"></script>
 </head>
 
 <body>
-
     <header>
         <!-- Logo -->
-        <div class="logo"><img src="images/Logo_TIAW.jpg"/><a href="index.html">FocusTime</a></div>
+        <div class="logo"><img src="images/Logo_TIAW.jpg" /><a href="index.html">FocusTime</a></div>
 
         <!-- Menu -->
         <nav>
@@ -28,9 +27,63 @@
             <span class="icon"><a href="dicas.html" class="fas fa-lightbulb"></a></span>
         </div>
     </header>
+    <br>
+    <br>
+    <div class="conteudo-agenda">
+        <section class="perfil-agenda">
+            <div class="profile-agenda" style="width: 60%;">
+                <h3 id="nomeUsuarioAgenda"></h3>
+                <img style="width: 120px; height: 120px;" id="fotoPerfilAgenda" src="" alt="Foto Perfil" />
+                <div class="label">VIDA</div>
+                <div class="bar vida"><span style="width: 80%"></span></div>
+                <div class="label">XP</div>
+                <div class="bar xp"><span style="width: 45%"></span></div>
+            </div>
+            <a class="back-button" href="criarevento.html">CRIAR EVENTO</a>
+        </section>
 
-    <h3>Página de outro integrante (está no arquivo ZIP para testes de JavaScript)</h3>
+        <aside class="agenda">
+            <h1>Agenda de Eventos</h1>
+            <button id="verTodosBtn">Ver Todos os Eventos</button>
+            <div id="eventosContainer"></div>
+        </aside>
+    </div>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const usuarioStr = localStorage.getItem('loggedUser') || sessionStorage.getItem('usuarioLogado');
+
+            if (!usuarioStr) {
+                window.location.href = 'login.html';
+                return;
+            }
+
+            try {
+                const usuario = JSON.parse(usuarioStr);
+
+                const imagem = document.getElementById("fotoPerfilAgenda") || document.getElementById("profileImage");
+
+                if (imagem) {
+                    imagem.src = usuario.foto && usuario.foto.trim() !== ""
+                        ? usuario.foto
+                        : "https://i.pinimg.com/474x/a8/da/22/a8da222be70a71e7858bf752065d5cc3.jpg";
+                }
+
+                const nomeUsuario = document.getElementById("nomeUsuarioAgenda");
+                if (nomeUsuario && usuario.nome) {
+                    nomeUsuario.textContent = usuario.nome;
+                }
+
+
+            } catch (erro) {
+                localStorage.removeItem('loggedUser');
+                sessionStorage.removeItem('usuarioLogado');
+                window.location.href = 'login.html';
+            }
+        });
+    </script>
+    <script src="app.js"></script>
+    <script src="app3.js"></script>
 </body>
 
 </html>

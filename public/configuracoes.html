@@ -11,10 +11,9 @@
 </head>
 
 <body>
-
     <header>
         <!-- Logo -->
-        <div class="logo"><img src="images/Logo_TIAW.jpg"/><a href="index.html">FocusTime</a></div>
+        <div class="logo"><img src="images/Logo_TIAW.jpg" /><a href="index.html">FocusTime</a></div>
 
         <!-- Menu -->
         <nav>
@@ -28,9 +27,36 @@
             <span class="icon"><a href="dicas.html" class="fas fa-lightbulb"></a></span>
         </div>
     </header>
+    <br>
+    <h3 style="padding: 10px;">Novas funções em breve!</h3>
 
-    <h3>Página de outro integrante (está no arquivo ZIP para testes)</h3>
+    <script>
+        // Login
+        document.addEventListener('DOMContentLoaded', () => {
+            const usuario =
+                localStorage.getItem('loggedUser') ||
+                sessionStorage.getItem('usuarioLogado');
 
+            if (!usuario) {
+                window.location.href = 'login.html';
+            }
+
+            try {
+                const userData = JSON.parse(usuario);
+                console.log("Usuário logado:", userData.email);
+            } catch (e) {
+                localStorage.removeItem('loggedUser');
+                sessionStorage.removeItem('usuarioLogado');
+                window.location.href = 'login.html';
+            }
+
+            document.getElementById('logoutBtn').addEventListener('click', () => {
+                localStorage.removeItem('loggedUser');
+                sessionStorage.removeItem('usuarioLogado');
+                window.location.href = 'login.html';
+            });
+        });
+    </script>
 </body>
 
 </html>

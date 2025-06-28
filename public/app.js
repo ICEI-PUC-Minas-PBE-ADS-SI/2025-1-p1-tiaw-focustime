@@ -1,4 +1,4 @@
-/* Menu */
+// Menu
 document.addEventListener("DOMContentLoaded", () => {
     const navLinks = document.querySelectorAll("nav a");
     const currentPage = window.location.pathname.split("/").pop();
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-/* Carrossel */
+// Carrossel
 const sliders = document.querySelectorAll('.slider');
 const btnPrev = document.getElementById('prev-button');
 const btnNext = document.getElementById('next-button');
