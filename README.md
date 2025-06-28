@@ -1,6 +1,4 @@
-# Nome do projeto
-Gestão de Tempo - FocusTime
-
+# Gestão de Tempo - FocusTime
 CURSO: Sistemas de Informação
 
 DISCIPLINA: Trabalho Interdisciplinar: Aplicações Web
