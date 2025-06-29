@@ -45,6 +45,8 @@ Permite a exclusão dos dados pessoais para o sistema
 
 ![image](https://github.com/user-attachments/assets/47628d79-43f7-4328-bce2-7ee58dff8f44)
 
+##### Funcionalidade 2 - Criação de Tarefas
+
 Permite a criação de tarefas para o sistema
 
 * **Estrutura de dados:** [Tarefas](#estrutura-de-dados---tarefas)
@@ -57,6 +59,8 @@ Permite a criação de tarefas para o sistema
 * **Tela da funcionalidade**:
 
 ![image](https://github.com/user-attachments/assets/c1f48039-a5ed-4e9c-a71d-4ba0212f05a9)
+
+##### Funcionalidade 3 - Eventos na Agenda
 
 Permite a adição de eventos na agenda
 
