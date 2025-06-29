@@ -2,10 +2,17 @@
 
 <span style="color:red">Pré-requisitos: <a href="05-Projeto-interface.md"> Projeto de interface</a></span>
 
-Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
-
-![Arquitetura da solução](images/exemplo-arquitetura.png)
-
+[ Navegador ]
+   |
+[ Páginas Web (HTML, CSS e JS) ]
+   |
+[ Internet ]
+   |___________________
+   |                  |
+[ Hospedagem ]     [ API ]
+   |                  |
+[ Vercel ]        [ Render ]
+      
 ## Funcionalidades
 
 Esta seção apresenta as funcionalidades da solução.
