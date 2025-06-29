@@ -36,10 +36,11 @@ Essa estrutura nos permitiu manter o projeto organizado, com entregas incrementa
 
 ### Ferramentas
 
-| Ambiente                    | Plataforma      | Link de acesso                                                            |
-|-----------------------------|-----------------|---------------------------------------------------------------------------|
-| Processo de Design Thinking | Miro            | https://miro.com/app/board/uXjVIK0FUV8=/                                  |
-| Repositório de código fonte | GitHub          | https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-focustime.git |
-| Gerenciamento do projeto    | GitHub Projects | https://github.com/orgs/ICEI-PUC-Minas-PBE-ADS-SI/projects/64             |
-| Hospedagem                  | Vercel          | https://focustime-five.vercel.app/                                        |
-| Hospedagem (dados)          | Render          | https://focustime-9z8f.onrender.com/                                      |
+| Ambiente                    | Plataforma      | Link de acesso                                                                  |
+|-----------------------------|-----------------|---------------------------------------------------------------------------------|
+| Processo de Design Thinking | Miro            | https://miro.com/app/board/uXjVIK0FUV8=/                                        |
+| Repositório de código fonte | GitHub          | https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p1-tiaw-focustime.git       |
+| Gerenciamento do projeto    | GitHub Projects | https://github.com/orgs/ICEI-PUC-Minas-PBE-ADS-SI/projects/64                   |
+| Hospedagem                  | Vercel          | https://focustime-five.vercel.app/                                              |
+| Hospedagem (dados)          | Render          | https://focustime-9z8f.onrender.com/                                            |
+| Documentação                | GitHub          | https://github.com/user-attachments/files/20968976/FocusTime.-.Documentacao.pdf |
