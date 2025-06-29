@@ -4,9 +4,6 @@
 
 Layout padrão da aplicação que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
 
-> **Links úteis**:
->
-> - [CSS website layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website page layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect liquid layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and why icons improve your web design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+O menu interativo está presente em todas as páginas do site, exceto no login e no cadastro. Além disso, as cores (laranja, preto e branco) estará presente em todas as páginas web.
+
+![image](https://github.com/user-attachments/assets/c60b864a-aeb7-4b1a-8815-2cb56f4168ce)
