@@ -19,32 +19,32 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 **Caso de teste	CT-001 – Cadastrar perfil**
 
 - Requisito associado	RF-001 - A aplicação deve apresentar a funcionalidade de cadastro de usuários para que estes consigam criar seu perfil.
-- Registro de evidência	https://focustime-five.vercel.app/evidencias/ct-001
+- Registro de evidência	[https://focustime-five.vercel.app/evidencias/ct-001](https://focustime-five.vercel.app/)
 
 **Caso de teste	CT-002 – Cadastro com e-mail já existente**
 
 - Requisito associado	RF-001 - A aplicação deve apresentar a funcionalidade de cadastro de usuários para que estes consigam criar seu perfil.
-- Registro de evidência	https://focustime-five.vercel.app/evidencias/ct-002
+- Registro de evidência	[https://focustime-five.vercel.app/evidencias/ct-002](https://focustime-five.vercel.app/)
 
 **Caso de teste	CT-003 – Cadastro com CPF já existente**
 
 - Requisito associado	RF-001 - A aplicação deve apresentar a funcionalidade de cadastro de usuários para que estes consigam criar seu perfil.
-- Registro de evidência	https://focustime-five.vercel.app/evidencias/ct-003
+- Registro de evidência	[https://focustime-five.vercel.app/evidencias/ct-003](https://focustime-five.vercel.app/)
 
 **Caso de teste	CT-004 – Cadastro com senhas diferentes**
 
 - Requisito associado	RF-001 - A aplicação deve apresentar a funcionalidade de cadastro de usuários para que estes consigam criar seu perfil.
-- Registro de evidência	https://focustime-five.vercel.app/evidencias/ct-004
+- Registro de evidência	[https://focustime-five.vercel.app/evidencias/ct-004](https://focustime-five.vercel.app/)
 
 **Caso de teste	CT-005 – Login com e-mail ou senha incorretos**
 
 - Requisito associado	RF-002 - A aplicação deve permitir o login apenas com credenciais corretas de usuários cadastrados.
-- Registro de evidência	https://focustime-five.vercel.app/evidencias/ct-005
+- Registro de evidência	[https://focustime-five.vercel.app/evidencias/ct-005](https://focustime-five.vercel.app/)
 
 **Caso de teste	CT-006 – Login realizado com sucesso**
 
 - Requisito associado	RF-002 - A aplicação deve permitir o login apenas com credenciais corretas de usuários cadastrados.
-- Registro de evidência	https://focustime-five.vercel.app/evidencias/ct-006
+- Registro de evidência	[https://focustime-five.vercel.app/evidencias/ct-006](https://focustime-five.vercel.app/)
 
 
 > **Links úteis**:
