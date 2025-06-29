@@ -45,6 +45,34 @@ Permite a exclusão dos dados pessoais para o sistema
 
 ![image](https://github.com/user-attachments/assets/47628d79-43f7-4328-bce2-7ee58dff8f44)
 
+Permite a criação de tarefas para o sistema
+
+* **Estrutura de dados:** [Tarefas](#estrutura-de-dados---tarefas)
+* **Instruções de acesso:**
+  * Abra o site;
+  * Faça o login;
+  * Em seguida, ao ser redirecionado para a página principal, selecione, no menu, a opção "TAREFAS";
+  * Coloque as informações da tarefa e a dificuldade;
+  * Clique em "Criar Tarefa".
+* **Tela da funcionalidade**:
+
+![image](https://github.com/user-attachments/assets/c1f48039-a5ed-4e9c-a71d-4ba0212f05a9)
+
+Permite a adição de eventos na agenda
+
+* **Estrutura de dados:** [Agenda](#estrutura-de-dados---agenda)
+* **Instruções de acesso:**
+  * Abra o site;
+  * Faça o login;
+  * Em seguida, ao ser redirecionado para a página principal, selecione, no menu, a opção "AGENDA";
+  * Selecione o botão "Criar Evento";
+  * Coloque as informações (título, horário e data);
+  * Clique em "Salvar";
+  * Visualize seus compromissos em "Ver Todos os Eventos".
+* **Tela da funcionalidade**:
+
+![image](https://github.com/user-attachments/assets/199d6e9b-1528-44b3-a401-e2d6177d809d)
+![image](https://github.com/user-attachments/assets/26f7edb6-d644-4b58-8e58-9c62dd3fe29d)
 
 ### Estruturas de dados
 
@@ -56,16 +84,16 @@ Contatos da aplicação
 
 ```json
   {
-      "id": "586a",
-      "nome": "Matheus Henrique",
-      "idade": 18,
-      "cpf": "15975395175",
-      "telefone": "15975395175",
-      "email": "matheushbf14@gmail.com",
-      "password": "123456Ma",
-      "foto": "https://res.cloudinary.com/dqmrubnvg/image/upload/v1750995730/k6pdjdh2pmjw4u4abipj.jpg",
-      "dataCadastro": "2025-06-24T21:08:14.339Z"
-    }
+    "id": "586a",
+    "nome": "Matheus Henrique",
+    "idade": 18,
+    "cpf": "15975395175",
+    "telefone": "15975395175",
+    "email": "matheushbf14@gmail.com",
+    "password": "123456Ma",
+    "foto": "https://res.cloudinary.com/dqmrubnvg/image/upload/v1750995730/k6pdjdh2pmjw4u4abipj.jpg",
+    "dataCadastro": "2025-06-24T21:08:14.339Z"
+  }
   
 ```
 
@@ -83,6 +111,36 @@ Registro dos usuários do sistema utilizados para login e para o perfil do siste
   }
 ```
 
+##### Estrutura de dados - Tarefas
+
+Contatos da aplicação
+
+```json
+  {
+      "id": "9178",
+      "titulo": "Documentação",
+      "descricao": "Documentação do nosso projeto de TIAW - Gestão de Tempo.",
+      "data": "2025-06-29",
+      "dificuldade": "difícil"
+    }
+  
+```
+
+##### Estrutura de dados - Agenda
+
+Contatos da aplicação
+
+```json
+  {
+    "id": "9ec3",
+    "dia": 2,
+    "mes": 7,
+    "ano": 2025,
+    "titulo": "Apresentação de TIAW",
+    "horario": "19:00"
+  }
+  
+```
 
 ### Módulos e APIs
 
@@ -98,7 +156,7 @@ Esta seção apresenta os módulos e APIs utilizados na solução.
 
 **Scripts:**
 
-* Render - [[https://render.com/](https://render.com/)
+* Render - [https://render.com/](https://render.com/)
 
 
 ## Hospedagem
