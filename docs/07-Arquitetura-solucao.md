@@ -2,16 +2,7 @@
 
 <span style="color:red">Pré-requisitos: <a href="05-Projeto-interface.md"> Projeto de interface</a></span>
 
-[ Navegador ]
-   |
-[ Páginas Web (HTML, CSS e JS) ]
-   |
-[ Internet ]
-   |___________________
-   |                  |
-[ Hospedagem ]     [ API ]
-   |                  |
-[ Vercel ]        [ Render ]
+![Arquitetura do Site](https://github.com/user-attachments/assets/3aeef79f-6013-44eb-9e42-b534cba82ab3)
       
 ## Funcionalidades
 
