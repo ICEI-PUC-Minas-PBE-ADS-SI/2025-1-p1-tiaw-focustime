@@ -22,6 +22,8 @@
 
 ## Vídeo
 
+[Clique aqui para assistir ao vídeo](./presentation/VideoTIAW.mp4)
+
 O grupo também deverá gravar um vídeo de até cinco minutos apresentando a solução. O vídeo deve incluir uma demonstração da aplicação hospedada, mostrando seu funcionamento.
 
 Podem utilizar quaisquer recursos na produção do vídeo, mas certifiquem-se de destacar as funcionalidades da aplicação.
