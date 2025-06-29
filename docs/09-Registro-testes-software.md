@@ -16,6 +16,36 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 | Requisito associado | RF-00Y - A aplicação deve permitir que um usuário previamente cadastrado faça login. |
 | Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
 
+**Caso de teste	CT-001 – Cadastrar perfil**
+
+- Requisito associado	RF-001 - A aplicação deve apresentar a funcionalidade de cadastro de usuários para que estes consigam criar seu perfil.
+- Registro de evidência	https://focustime-five.vercel.app/evidencias/ct-001
+
+**Caso de teste	CT-002 – Cadastro com e-mail já existente**
+
+- Requisito associado	RF-001 - A aplicação deve apresentar a funcionalidade de cadastro de usuários para que estes consigam criar seu perfil.
+- Registro de evidência	https://focustime-five.vercel.app/evidencias/ct-002
+
+**Caso de teste	CT-003 – Cadastro com CPF já existente**
+
+- Requisito associado	RF-001 - A aplicação deve apresentar a funcionalidade de cadastro de usuários para que estes consigam criar seu perfil.
+- Registro de evidência	https://focustime-five.vercel.app/evidencias/ct-003
+
+**Caso de teste	CT-004 – Cadastro com senhas diferentes**
+
+- Requisito associado	RF-001 - A aplicação deve apresentar a funcionalidade de cadastro de usuários para que estes consigam criar seu perfil.
+- Registro de evidência	https://focustime-five.vercel.app/evidencias/ct-004
+
+**Caso de teste	CT-005 – Login com e-mail ou senha incorretos**
+
+- Requisito associado	RF-002 - A aplicação deve permitir o login apenas com credenciais corretas de usuários cadastrados.
+- Registro de evidência	https://focustime-five.vercel.app/evidencias/ct-005
+
+**Caso de teste	CT-006 – Login realizado com sucesso**
+
+- Requisito associado	RF-002 - A aplicação deve permitir o login apenas com credenciais corretas de usuários cadastrados.
+- Registro de evidência	https://focustime-five.vercel.app/evidencias/ct-006
+
 
 > **Links úteis**:
 > - [Screencast: entenda o que é e como gravar vídeos com ele](https://rockcontent.com/br/blog/screencast/) 
