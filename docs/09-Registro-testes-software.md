@@ -20,11 +20,13 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 
 - Requisito associado	RF-001 - A aplicação deve apresentar a funcionalidade de cadastro de usuários para que estes consigam criar seu perfil.
 - Registro de evidência	[https://focustime-five.vercel.app/evidencias/ct-001](https://focustime-five.vercel.app/)
+- ![Cadastro realizado](https://github.com/user-attachments/assets/a0ac8085-2dab-41f0-bd3e-3ee0e9746bb3)
 
 **Caso de teste	CT-002 – Cadastro com e-mail já existente**
 
 - Requisito associado	RF-001 - A aplicação deve apresentar a funcionalidade de cadastro de usuários para que estes consigam criar seu perfil.
 - Registro de evidência	[https://focustime-five.vercel.app/evidencias/ct-002](https://focustime-five.vercel.app/)
+- ![Screenshot_4](https://github.com/user-attachments/assets/5622c535-b152-42fc-ad62-a908b5ff57ee)
 
 **Caso de teste	CT-003 – Cadastro com CPF já existente**
 
