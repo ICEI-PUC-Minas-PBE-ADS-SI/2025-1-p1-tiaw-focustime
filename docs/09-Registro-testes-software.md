@@ -49,48 +49,48 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
  **Caso de teste CT-007 – Tarefa Criada com Sucesso**
 
 Requisito associado - A aplicação deve permitir ao usuário criar tarefas na sua área logada.
-Registro de evidência: [Evidência CT-007](https://focustime-five.vercel.app/evidencias/ct-007) — Página: tarefas.html
+Registro de evidência: [Evidência CT-007](https://focustime-five.vercel.app/tarefas.html) — Página: tarefas.html
 
 
 **Caso de teste CT-008 – Visualizar tarefas ativas e verificar pontuação de XP**
 
 Requisito associado - O sistema deve apresentar todas as tarefas ativas de um usuário logado e deve atualizar a pontuação do usuário ao concluir uma tarefa.
-Registro de evidência: [Evidência CT-008](https://focustime-five.vercel.app/evidencias/ct-008) — Página: tarefas.html
+Registro de evidência: [Evidência CT-008](https://focustime-five.vercel.app/tarefas.html) — Página: tarefas.html
 
 **Caso de teste CT-009 – Excluir tarefa**
 
 Requisito associado - A aplicação deve permitir a exclusão de tarefas pelo usuário.
-Registro de evidência: [Evidência CT-009](https://focustime-five.vercel.app/evidencias/ct-009) — Página: tarefas.html
+Registro de evidência: [Evidência CT-009](https://focustime-five.vercel.app/tarefas.html) — Página: tarefas.html
 
 **Caso de teste CT-010 – Criação de Evento**
 
 Requisito associado - A aplicação deve permitir a criação de um novo evento.
-Registro de evidência:  [Evidência CT-010](https://focustime-five.vercel.app/evidencias/ct-010) — Página: criarevento.html
+Registro de evidência:  [Evidência CT-010](https://focustime-five.vercel.app/criarevento.html) — Página: criarevento.html
 
 **Caso de teste CT-011 – Tentativa de criar evento em data passada**
 
 Requisito associado - A aplicação deve impedir criação de evento em data anterior.
-Registro de evidência:  [Evidência CT-011](https://focustime-five.vercel.app/evidencias/ct-011) — Página: criarevento.html
+Registro de evidência:  [Evidência CT-011](https://focustime-five.vercel.app/criarevento.html) — Página: criarevento.html
 
 **Caso de teste CT-012 – Tentativa sem preencher campos obrigatórios**
 
 Requisito associado - A aplicação deve impedir o usuário de avançar sem os campos obrigatórios do evento.
-Registro de evidência:  [Evidência CT-012](https://focustime-five.vercel.app/evidencias/ct-012) — Página: criarevento.html
+Registro de evidência:  [Evidência CT-012](https://focustime-five.vercel.app/criarevento.html) — Página: criarevento.html
 
 **Caso de teste CT-013 – Tentativa com horário já passado no mesmo dia**
 
 Requisito associado - A aplicação deve impedir criação de evento em horário anterior ao atual.
-Registro de evidência:  [Evidência CT-0013](https://focustime-five.vercel.app/evidencias/ct-013) — Página: criarevento.html
+Registro de evidência:  [Evidência CT-0013](https://focustime-five.vercel.app/criarevento.html) — Página: criarevento.html
 
 **Caso de teste CT-014 – Exibição do evento na agenda**
 
 Requisito associado - A aplicação deve exibir o evento criado na agenda.
-Registro de evidência:  [Evidência CT-014](https://focustime-five.vercel.app/evidencias/ct-014) — Página: agenda.html
+Registro de evidência:  [Evidência CT-014](https://focustime-five.vercel.app/agenda.html) — Página: agenda.html
 
 **Caso de teste CT-015 – Editar e excluir evento na agenda**
 
 Requisito associado - O sistema deve permitir a edição de eventos salvos pelo usuário e deve permitir a exclusão de eventos da agenda.
-Registro de evidência:  [Evidência CT-015](https://focustime-five.vercel.app/evidencias/ct-015) — Página: agenda.html
+Registro de evidência:  [Evidência CT-015](https://focustime-five.vercel.app/agenda.html) — Página: agenda.html
 
 
 > **Links úteis**:
