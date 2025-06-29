@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Visualizar Usuários</title>
+    <!-- Use a versão minificada do Tailwind para produção -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+</head>
+
+<body class="bg-gray-100 p-6">
+    <h1 class="text-2xl font-bold mb-4">Lista de Usuários</h1>
+    <div id="usuariosContainer" class="space-y-4">
+        <p class="text-gray-500">Carregando usuários...</p>
+    </div>
+
+    <script>
+        const BASE_URL = "https://focustime-9z8f.onrender.com";
+        const container = document.getElementById("usuariosContainer");
+
+        async function carregarUsuarios() {
+            try {
+                const response = await fetch(`${BASE_URL}/usuarios`);
+
+                if (!response.ok) {
+                    throw new Error(`Erro HTTP: ${response.status}`);
+                }
+
+                const usuarios = await response.json();
+
+                if (!Array.isArray(usuarios)) {
+                    throw new Error("Dados recebidos não são uma lista de usuários");
+                }
+
+                exibirUsuarios(usuarios);
+            } catch (err) {
+                console.error("Erro ao carregar usuários:", err);
+                container.innerHTML = `
+                    <p class='text-red-500'>Erro ao carregar usuários: ${err.message}</p>
+                    <button onclick="carregarUsuarios()" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded">
+                        Tentar novamente
+                    </button>
+                `;
+            }
+        }
+
+        function exibirUsuarios(usuarios) {
+            container.innerHTML = "";
+
+            if (usuarios.length === 0) {
+                container.innerHTML = "<p class='text-gray-500'>Nenhum usuário cadastrado.</p>";
+                return;
+            }
+
+            usuarios.forEach(usuario => {
+                const card = document.createElement("div");
+                card.className = "bg-white p-4 shadow-md rounded flex justify-between items-center";
+                card.innerHTML = `
+                    <div>
+                        <p><strong>ID:</strong> ${usuario.id}</p>
+                        <p><strong>Nome:</strong> ${usuario.nome || 'Não informado'}</p>
+                        <p><strong>Email:</strong> ${usuario.email}</p>
+                    </div>
+                    <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600" data-user-id="${usuario.id}">
+                        Excluir
+                    </button>
+                `;
+
+                const deleteBtn = card.querySelector('button');
+                deleteBtn.addEventListener('click', () => excluirUsuario(usuario.id));
+
+                container.appendChild(card);
+            });
+        }
+
+        async function excluirUsuario(id) {
+            if (!confirm(`Tem certeza que deseja excluir o usuário com ID ${id}?`)) {
+                return;
+            }
+
+            try {
+                const response = await fetch(`${BASE_URL}/usuarios/${id}`, {
+                    method: "DELETE"
+                });
+
+                if (response.ok) {
+                    alert("Usuário excluído com sucesso!");
+                    await carregarUsuarios();
+                } else {
+                    const errorData = await response.json().catch(() => ({}));
+                    throw new Error(errorData.message || "Erro ao excluir usuário");
+                }
+            } catch (err) {
+                console.error("Erro ao excluir usuário:", err);
+                alert(`Falha ao excluir usuário: ${err.message}`);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', carregarUsuarios);
+    </script>
+</body>
+
+</html>

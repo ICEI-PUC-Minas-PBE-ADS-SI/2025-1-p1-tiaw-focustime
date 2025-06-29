@@ -1,78 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="./assets/js/login.js"></script>
+    <title>FocusTime</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../public/assets/css/style.css" />
   </head>
+
   <body>
     <header>
-      <div class="banner">
-        <img src="./assets/images/banner_ti.png" alt="" />
+      <!-- Logo -->
+      <div class="logo">
+        <img src="../public/assets/images/Logo_TIAW.jpg" /><a href="index.html"
+          >FocusTime</a
+        >
       </div>
-      <div class="barra-info">
-        <nav class="menu">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">Sobre nós</a></li>
-          </ul>
-        </nav>
-        <div class="dados-usuario">
-          <span id="userInfo"></span>
-        </div>
+
+      <!-- Menu -->
+      <nav>
+        <a href="index.html" class="active">HOME</a>
+        <a href="tarefas.html">TAREFAS</a>
+        <a href="agenda.html">AGENDA</a>
+      </nav>
+      <div class="icons">
+        <span class="icon"
+          ><a href="" class="fa-solid fa-right-from-bracket" id="logoutBtn"></a
+        ></span>
+        <span class="icon"><a href="perfil.html" class="fas fa-user"></a></span>
+        <span class="icon"
+          ><a href="configuracoes.html" class="fas fa-cog"></a
+        ></span>
+        <span class="icon"
+          ><a href="dicas.html" class="fas fa-lightbulb"></a
+        ></span>
       </div>
     </header>
-    <main>
-        <h3>Boas vindas</h3>
-        <p>Sejam bem-vindos à home-page do projeto de TI 1 - Trabalho
-        Interdisciplinar</p>
-        <p>Esse conteúdo que você está lendo foi criado para exemplificar como
-        criar o seu site integrado com o ambiente de login e o back end que
-        utiliza o JSON Server.</p>
-        <p>Ao criar o seu site, você deve adaptar esse código para sua neessidade ou começar do zero, excluindo todo esse conteúdo.
+
+    <!-- Corpo do Texto -->
+    <nav class="grid">
+      <!-- Comece Agora -->
+      <div class="comece_agora">
+        <h1><b>DOMINE SEU TEMPO COM O FOCUSTIME!</b></h1>
+        <a href="tarefas.html"><button>COMECE AGORA</button></a>
+      </div>
+
+      <div class="imagem_comece_agora">
+        <img src="../public/assets/images/imagem1.png" />
+      </div>
+
+      <!-- Funções do Site -->
+      <div class="funcoes">
+        <div>
+          <button><a href="tarefas.html" class="fa-solid fa-check"></a></button>
+          <h3>Organize Tarefas</h3>
+          <p><b>Saiba o que fazer no seu dia.</b></p>
+        </div>
+
+        <div>
+          <button>
+            <a href="agenda.html" class="fa-solid fa-arrow-rotate-left"></a>
+          </button>
+          <h3>Controle Seu Tempo</h3>
+          <p><b>Tenha o controle diário, mensal e anual.</b></p>
+        </div>
+
+        <div>
+          <button><a href="dicas.html" class="fas fa-lightbulb"></a></button>
+          <h3>Receba Dicas</h3>
+          <p><b>Dicas e frases motivacionais.</b></p>
+        </div>
+        <br />
+      </div>
+
+      <!-- Depoimentos -->
+      <div class="depoimentos">
+        <h2>Depoimentos</h2>
+      </div>
+      <div class="container-slider">
+        <button id="prev-button">
+          <img src="../public/assets/images/arrow.png" alt="prev-button" />
+        </button>
+
+        <div class="container-depoimentos">
+          <p class="slider on">
+            "O uso do FocusTime me ajudou bastante a controlar as minhas
+            responsabilidades, agora, tenho total controle sobre meu tempo!"
+            <strong>- Ana Conceição Damasceno</strong>
+          </p>
+
+          <p class="slider">
+            "Antes de começar o uso do site, minha vida era muito bagunçada,
+            mas, com o uso do FocusTime, pude evoluir no controle da minhas
+            responsabilidades" <strong>- Tiphanie da Silva Pires</strong>
+          </p>
+
+          <p class="slider">
+            "O FocusTime é uma excelente ferramenta na construção da minha
+            organização, sem ele, estaria totalmente perdido."
+            <strong>- Paulo Lemos</strong>
+          </p>
+        </div>
+
+        <button id="next-button">
+          <img src="../public/assets/images/arrow.png" alt="next-button" />
+        </button>
+      </div>
+
+      <div class="imagem2">
+        <img src="../public/assets/images/imagem2.png" />
+      </div>
+
+      <!-- Apresentação da Equipe -->
+      <div class="equipe" style="margin-top: -110px">
+        <h2>Nossa Equipe</h2>
+        <a href="contatos.html" style="background-color: #fff5e9"
+          ><img class="fotos" src="../public/assets/images/Ana.jpg" alt="Ana"
+        /></a>
+        <a href="contatos.html" style="background-color: #fff5e9"
+          ><img
+            class="fotos"
+            src="../public/assets/images/Fernando.jpg"
+            alt="Fernando"
+        /></a>
+        <a href="contatos.html" style="background-color: #fff5e9"
+          ><img
+            class="fotos"
+            src="../public/assets/images/Matheus.jpeg"
+            alt="Matheus"
+        /></a>
+      </div>
+
+      <!-- Perguntas Frequentes -->
+      <div class="perguntas" style="margin-top: -110px">
+        <h2>Perguntas Frequentes</h2>
+        <p><b>O FocusTime é gratuito?</b></p>
+        <p>Sim, totalmente gratuito!</p>
+
+        <p><b>O FocusTime é acessível para todas as idades?</b></p>
+        <p>
+          Temos um foco em estudantes na fase de transição do Ensino Médio para
+          o Ensino Superior, em profissionais ingressados no mercado de trabalho
+          e, principalmente, usuários que possuem as duas opções no seu
+          cotidiano.
         </p>
 
-        <h3>Arquivos do site (Front End)</h3>
-        <p>Para montar seu site, edite os arquivos existentes e crie novos arquivos na pasta <code>public</code> que mantem todos os arquivos da parte de Front End do site, a interface que é vista pelo usuário no navegador.</p>
+        <p><b>Qual o objetivo do FocusTime?</b></p>
+        <p>
+          O nosso objetivo é auxiliar todos os nossos usuários na construção de
+          uma vida mais organizada e qualificada, pois sem o cuidado com o
+          tempo, o desperdício da vida com coisas rasas acontece frequentemente
+          - aliás, o que temos de mais precioso nessa vida é o TEMPO.
+        </p>
+      </div>
 
-        <p>Nesta pasta <code>public</code>, sugerimos que você organize os arquivos do seu site da seguinte maneira:</p>
-        <ul>
-            <li><strong>Pasta <code>assets</code></strong>: os arquivos de formatação (CSS), os scripts (JS), as imagens utilizadas no site (JPG, PNG, GIF, SVG, etc), fontes (TTF) e outros arquivos gerais utilizados por todo o site.</li>
-            <li><strong>Pasta <code>modulos</code></strong>: os arquivos utilizados na implementação das funcionalidades do site. Separe uma sub-pasta para cada novo módulo ou funcionalidade. Pode também ser utilizado para dividir o trabalho de cada membro do grupo.</li>
-            <li><strong>Arquivo <code>index.html</code></strong>: arquivo que representa a "home page" do site.</li>
-        </ul>
+      <div class="imagem3" style="margin-top: -110px">
+        <img src="../public/assets/images/imagem3.png" />
+      </div>
 
-        <h3>Módulo de Login</h3>
-        <p>O módulo de login de usuário traz uma funcionalidade completa de registro de usuários e validação de login e senha.</p>
-        <h4>Integração do site com módulo de Login</h4>
-        <p>Para utilizar o módulo de login, basta incluir o script na sua página colocando a seguinte tag no HEAD</p>
-        <pre>&lt;script src="./assets/js/login.js"&gt&lt;script&gt;</pre>
-        <p>Ao incluir o script de login na sua página, caso o usuário ainda não tenha efetuado login, ao acessar a home-page do site, o navegador será direcionado para o formulário de <strong>Identificação de Usuário</strong>. Se o usuário informar corretamente o login e a senha, o navegador será direcionado para a Home-Page.</p>
-        <h4>Sessão do usuário logado</h4>
-        <p>Assim que o usuário se identifica e acessa a parte privada do site, o módulo de login cria uma chave do sessionStorage do navegador com o título <strong>usuarioCorrente</strong> e cujo conteúdo é um objeto com os atributos: id, nome, login, senha e email. </p>
-        <h4>Base de dados de usuários</h4>
-        <p>Inicialmente o módulo de login é configurado com dois usuários: </p>
-        <ul>
-            <li>admin - Senha: 123</li>
-            <li>user - Senha: 123</li>
-        </ul>
+      <div class="rodape" style="margin-top: -40px">
+        <span><img src="images/Logo_TIAW.jpg" />© 2025 FocusTime</span>
+        <span><a href="termos.html">Termos</a></span>
+        <span><a href="privacidade.html">Privacidade</a></span>
+        <span><a href="contatos.html">Contato</a></span>
+      </div>
+    </nav>
 
-        <h3>Servidor Web e API baseada no JSON Server (Back end)</h3>
-        <p>O ambiente de trabalho disponibilizado para suportar o Trabalho Interdisciplinar 1 é baseado no Node.js. A aplicação de back end utiliza o módulo JSON Server para criar um Servidor Web que prove duas estruturas separadas:
-        <ul>
-            <li><strong>Arquivos estáticos (Pasta <code>public</code>)</strong>: da acesso aos arquivos utilizados no front end (HTML, CSS e JavaScript).</li>
-            <li><strong>API RESTful (pasta <code>db</code>)</strong>: uma interface para acesso aos dados definidos no arquivo db.json.</li>
-        </ul></p>
+    <script>
+      // Login
+      document.addEventListener("DOMContentLoaded", () => {
+        const usuario =
+          localStorage.getItem("loggedUser") ||
+          sessionStorage.getItem("usuarioLogado");
 
-        <h4>Arquitetura do site</h4>
-        <p>A imagem que se segue apresenta a arquitetura desse ambiente, mostrando as duas refletindo as pastas desse ambiente.</p>
-        <p><img class="img-fluid d-block w-75 m-auto" src="./assets/images/servidor.png" alt=""></p>
+        if (!usuario) {
+          window.location.href = "modulos/login/login.html";
+        }
 
-        <h4>Arquivo db.json</h4>
-        <p>O arquivo JSON utilizado para definição das estruturas dos dados providos pela aplicação é localizado na pasta db e tem um formato como o mostrado no exemplo da figura a seguir. Esse arquivo define uma estrutura hipotética de contatos que descreve itens com os seguintes atributos: <code>id</code>, <code>nome</code> e <code>cidade</code>. para o JSON Server, é fundamental que toda estrutura tenha um atributo de identificador de nome <code>id</code>.</p>
-        <p><img class="img-fluid d-block w-50 m-auto" src="./assets/images/arquivo_json.png" alt=""></p>
-    </main>
+        try {
+          const userData = JSON.parse(usuario);
+          console.log("Usuário logado:", userData.email);
+        } catch (e) {
+          localStorage.removeItem("loggedUser");
+          sessionStorage.removeItem("usuarioLogado");
+          window.location.href = "modulos/login/login.html";
+        }
+
+        document.getElementById("logoutBtn").addEventListener("click", () => {
+          localStorage.removeItem("loggedUser");
+          sessionStorage.removeItem("usuarioLogado");
+          window.location.href = "modulos/login/login.html";
+        });
+      });
+    </script>
+    <script src="app.js"></script>
   </body>
 </html>
