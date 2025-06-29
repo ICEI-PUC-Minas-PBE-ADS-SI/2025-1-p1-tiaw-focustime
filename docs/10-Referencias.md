@@ -1,21 +1,11 @@
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc.) utilizadas no desenvolvimento do trabalho.
+- Run run It Blog [https://blog.runrun.it/gestao-do-tempo/](https://blog.runrun.it/gestao-do-tempo/)
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
-
-⚠️ EXEMPLO ⚠️
-
-- BENYON, David. **Interação humano-computador**. 2. ed. São Paulo: Pearson Prentice Hall, 2011.
-
-- CORMEN, Thomas H et al. **Algoritmos:** teoria e prática. 4. ed. Rio de Janeiro: GEN LTC, 2024.
+- Blog FIA [https://fia.com.br/blog/gestao-do-tempo/](https://fia.com.br/blog/gestao-do-tempo/)
  
-- ELMASRI, Ramez; NAVATHE, Sham. **Sistemas de banco de dados**. 7. ed. São Paulo: Pearson, c2019.
+- Portal SEBRAE [https://sebrae.com.br/sites/PortalSebrae/artigos/gestao-do-tempo-como-otimizar-o-uso-do-seu-tempo,bde539603d5ad710VgnVCM100000d701210aRCRD](https://sebrae.com.br/sites/PortalSebrae/artigos/gestao-do-tempo-como-otimizar-o-uso-do-seu-tempo,bde539603d5ad710VgnVCM100000d701210aRCRD)
 
-- RUSSELL, Stuart J.; NORVIG, Peter. **Inteligência artificial:** uma abordagem moderna. 4. ed. Rio de Janeiro, RJ: LTC, 2022.
+- Wikipedia [https://pt.wikipedia.org/wiki/Gerenciamento_de_tempo](https://pt.wikipedia.org/wiki/Gerenciamento_de_tempo)
 
-- SUTHERLAND, Jeffrey Victor; SUTHERLAND, J. J. **Scrum:** a arte de fazer o dobro do trabalho na metade do tempo. Rio de Janeiro, RJ: Sextante, 2019. 254 p.
-
-> **Links úteis**:
-> - [Padrão PUC Minas de normalização ABNT](http://portal.pucminas.br/biblioteca/documentos/GUIA-COMPLETO-ABNT-Elaborar-formatar-trabalho-cientificoNOVO.pdf)
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/)
+- Técnica Pomodoro [https://tecnicapomodoro.com.br](https://tecnicapomodoro.com.br)
