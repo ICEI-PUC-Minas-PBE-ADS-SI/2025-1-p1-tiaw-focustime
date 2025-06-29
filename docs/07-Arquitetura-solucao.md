@@ -8,7 +8,7 @@
 
 Esta seção apresenta as funcionalidades da solução.
 
-##### Funcionalidade 1 - Cadastro de contatos ⚠️ EXEMPLO ⚠️
+##### Funcionalidade 1 - Cadastro de contatos
 
 Permite a inclusão de contatos para o sistema
 
@@ -18,6 +18,7 @@ Permite a inclusão de contatos para o sistema
   * Acesse o link "Criar nova conta" (abaixo do botão "Entrar");
   * Em seguida, realize o cadastro.
 * **Tela da funcionalidade**:
+
 ![image](https://github.com/user-attachments/assets/1626af3f-5df1-4e8a-b636-1413046f0f0a)
 
 Permite a alteração dos dados pessoais para o sistema
@@ -29,6 +30,7 @@ Permite a alteração dos dados pessoais para o sistema
   * Em seguida, ao ser redirecionado para a página principal, clique no perfil (personagem no canto superior direito da tela);
   * Faça as alterações.
 * **Tela da funcionalidade**:
+
 ![image](https://github.com/user-attachments/assets/e1566b43-c101-4fea-8989-ae2b53e5ddf8)
 
 Permite a exclusão dos dados pessoais para o sistema
@@ -40,6 +42,7 @@ Permite a exclusão dos dados pessoais para o sistema
   * Em seguida, ao ser redirecionado para a página principal, selecione a barra de pesquisa e coloque a seguinte URL -> https://focustime-five.vercel.app/admin.html;
   * Já está disponível para exclusão (confira nesse link -> https://focustime-9z8f.onrender.com/usuarios).
 * **Tela da funcionalidade**:
+
 ![image](https://github.com/user-attachments/assets/47628d79-43f7-4328-bce2-7ee58dff8f44)
 
 
@@ -66,7 +69,7 @@ Contatos da aplicação
   
 ```
 
-##### Estrutura de dados - Usuários  ⚠️ EXEMPLO ⚠️
+##### Estrutura de dados - Usuários 
 
 Registro dos usuários do sistema utilizados para login e para o perfil do sistema.
 
