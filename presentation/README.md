@@ -6,6 +6,7 @@
 ## Slides
 
 [Baixar o PDF do trabalho](./SlideTIAW.pdf)
+[Apresentação FocusTime](.ApresentaçãoFocusTimePDF.pdf)
 
 
 > O arquivo deve estar no formato PDF e conter a apresentação completa do projeto, abordando todos os itens trabalhados nos demais artefatos. 
