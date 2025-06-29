@@ -169,8 +169,8 @@ Passos:
 - Verificar a listagem das tarefas ativas
 - Concluir uma ou mais tarefas
 - Observar se:
-- - A tarefa desaparece da lista ativa
-- - A pontuação de XP é aumentada
+  - A tarefa desaparece da lista ativa
+  - A pontuação de XP é aumentada
 
 Critério de êxito: As tarefas ativas são listadas corretamente, a conclusão de tarefas remove elas da lista e a pontuação de XP aumenta conforme esperado.
 
@@ -200,3 +200,24 @@ Responsável pela elaboração do caso de teste: Ana Luiza
 Responsável pelo artefato: Fernando
 
 [Vídeo](https://github.com/user-attachments/assets/198f25bc-b1ae-4461-9704-063dd464df6e)
+
+**Caso de teste** -> **CT-010 – Criação de Evento**
+
+Requisito associado: A aplicação deve permitir a criação de um novo evento.
+
+Objetivo do teste: Espera-se que, ao digitar todas as informações (título, horário e data), o usuário consiga salvar o evento.
+
+Passos:
+
+- Acessar a página de Agenda
+- Clicar em "Criar Evento"
+- Digitar as informações
+- Clicar em "Salvar"
+
+Critério de êxito: O evento é salvo corretamente e o usuário é redirecionado para a página de Agenda (na qual ele pode visualizar o/os evento/s).
+
+Responsável pela elaboração do caso de teste: Matheus
+
+Responsável pelo artefato: Ana Luiza
+
+![Imagem do WhatsApp de 2025-06-29 à(s) 16 47 33_b7af118a](https://github.com/user-attachments/assets/386fa993-c0c3-4193-9e80-bb13033ecef7)
