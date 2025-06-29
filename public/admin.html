@@ -16,7 +16,15 @@
         const BASE_URL = "https://focustime-9z8f.onrender.com";
         const container = document.getElementById("usuariosContainer");
 
-        const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
+        let usuarioLogado = null;
+        try {
+            const usuarioStorage = localStorage.getItem("usuarioLogado");
+            if (usuarioStorage) {
+                usuarioLogado = JSON.parse(usuarioStorage);
+            }
+        } catch (e) {
+            console.error("Erro ao ler dados do localStorage:", e);
+        }
 
         if (!usuarioLogado || !usuarioLogado.admin) {
             alert("Acesso negado. Apenas administradores podem acessar esta página.");
