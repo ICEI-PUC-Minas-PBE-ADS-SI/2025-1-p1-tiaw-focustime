@@ -6,12 +6,15 @@
 
 ## Etapa de entendimento
 
-✳️✳️✳️ APRESENTE OS ARTEFATOS DA ETAPA  ✳️✳️✳️
+ APRESENTE OS ARTEFATOS DA ETAPA 
 [Etapa de Entendimento.pdf](https://github.com/user-attachments/files/19624236/Etapa.de.Entendimento.pdf)
 
 ## Etapa de definição
 
 ### Personas
 
-**✳️✳️✳️ APRESENTE OS DIAGRAMAS DE PERSONAS ✳️✳️✳️**
+ APRESENTE OS DIAGRAMAS DE PERSONAS 
 [Etapa de Definição.pdf](https://github.com/user-attachments/files/19624256/Etapa.de.Definicao.pdf) (PDF Personas e Proposta de Valor)
+
+### Documentação do Projeto
+[FocusTime - Documentação.pdf](https://github.com/user-attachments/files/20968973/FocusTime.-.Documentacao.pdf)
