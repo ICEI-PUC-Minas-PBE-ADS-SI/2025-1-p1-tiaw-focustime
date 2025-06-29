@@ -221,3 +221,105 @@ Responsável pela elaboração do caso de teste: Matheus
 Responsável pelo artefato: Ana Luiza
 
 ![Imagem do WhatsApp de 2025-06-29 à(s) 16 47 33_b7af118a](https://github.com/user-attachments/assets/386fa993-c0c3-4193-9e80-bb13033ecef7)
+
+**Caso de teste** -> **CT-011 – Tentativa de criar evento em data passada**
+
+Requisito associado: A aplicação deve impedir criação de evento em data anterior.
+
+Objetivo do teste: Verificar se o sistema impede a criação de eventos em datas passadas.
+
+Passos:
+
+- Acessar a página de criação de evento ("Criar Evento")
+- Selecionar uma data anterior à atual
+- Preencher horário e título
+- Clicar em "Salvar"
+
+Critério de êxito: Mensagem de alerta -> "❌ Não é possível criar eventos em datas passadas".
+
+Responsável pela elaboração do caso de teste: Matheus
+
+Responsável pelo artefato: Ana Luiza
+
+![Imagem do WhatsApp de 2025-06-29 à(s) 16 47 32_89351662](https://github.com/user-attachments/assets/f333fb42-6bd7-4387-a12c-35dafc686b64)
+
+**Caso de teste** -> **CT-012 – Tentativa sem preencher campos obrigatórios**
+
+Requisito associado: A aplicação deve impedir o usuário de avançar sem os campos obrigatórios do evento.
+
+Objetivo do teste: Verificar se o sistema valida a obrigatoriedade do título, horário e seleção de data.
+
+Passos:
+
+- Acessar a página de criação de evento ("Criar Evento")
+- Não selecionar o dia e/ou não preencher título e horário
+- Clicar em "Salvar"
+
+Critério de êxito: Mensagem de alerta -> "Por favor, selecione um dia e preencha título e horário!".
+
+Responsável pela elaboração do caso de teste: Matheus
+
+Responsável pelo artefato: Ana Luiza
+
+![Imagem do WhatsApp de 2025-06-29 à(s) 16 47 33_bf40b10a](https://github.com/user-attachments/assets/058f82d5-dfe0-4571-9fa7-416cb388c574)
+
+**Caso de teste** -> **CT-013 – Tentativa com horário já passado no mesmo dia**
+
+Requisito associado: A aplicação deve impedir criação de evento em horário anterior ao atual.
+
+Objetivo do teste: Garantir que o sistema impeça eventos com horário anterior ao momento atual.
+
+Passos:
+
+- Acessar a página de criação de evento ("Criar Evento")
+- Selecionar o dia atual
+- Informar um horário anterior ao horário atual do sistema
+- Clicar em "Salvar"
+
+Critério de êxito: Mensagem de alerta -> "❌ Não é possível criar eventos para horários que já passaram".
+
+Responsável pela elaboração do caso de teste: Matheus
+
+Responsável pelo artefato: Ana Luiza
+
+![Imagem do WhatsApp de 2025-06-29 à(s) 16 47 33_5c33646f](https://github.com/user-attachments/assets/c73536de-3c54-42e0-bfd0-b82536195155)
+
+**Caso de teste** -> **CT-014 – Exibição do evento na agenda**
+
+Requisito associado: A aplicação deve exibir o evento criado na agenda.
+
+Objetivo do teste: Verificar se o evento salvo aparece corretamente na lista da agenda.
+
+Passos:
+
+- Após a criação de evento, o usuário será redirecionado para a página de Agenda
+- Observar se o evento aparece na listagem, com data, horário, título e botões de "Editar" e "Apagar"
+
+Critério de êxito: O evento "Teste", com data 30/06/2025 e horário 10:00, aparece corretamente na Agenda de Eventos.
+
+Responsável pela elaboração do caso de teste: Matheus
+
+Responsável pelo artefato: Ana Luiza
+
+![Imagem do WhatsApp de 2025-06-29 à(s) 16 47 32_313e9949](https://github.com/user-attachments/assets/b99613e8-3065-433e-89c5-042d8832f365)
+
+**Caso de teste** -> **CT-015 – Editar e excluir evento na agenda**
+
+Requisito associado: O sistema deve permitir a edição de eventos salvos pelo usuário e o deve permitir a exclusão de eventos da agenda.
+
+Objetivo do teste: Verificar se o sistema permite -> editar corretamente um evento já criado e excluir um evento da agenda com sucesso.
+
+Passos:
+
+- Acessar a agenda com eventos cadastrados
+- Clicar no botão “Editar” ao lado de um evento
+- Alterar os dados do evento (como título, data ou horário)
+- Clicar em “Salvar”
+
+Critério de êxito: O evento é atualizado com as novas informações, mensagem de sucesso (ex: “Evento atualizado com sucesso!”) é exibida e as informações antigas são substituídas na agenda.
+
+Responsável pela elaboração do caso de teste: Matheus
+
+Responsável pelo artefato: Ana Luiza
+
+[Vídeo](https://github.com/user-attachments/assets/af4fa0a0-bd9f-4a18-b965-bf6b3f269707)
