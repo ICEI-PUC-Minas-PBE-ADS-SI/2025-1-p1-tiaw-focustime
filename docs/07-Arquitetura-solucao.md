@@ -10,22 +10,38 @@ Esta seção apresenta as funcionalidades da solução.
 
 ##### Funcionalidade 1 - Cadastro de contatos ⚠️ EXEMPLO ⚠️
 
-Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema
+Permite a inclusão de contatos para o sistema
 
 * **Estrutura de dados:** [Contatos](#estrutura-de-dados---contatos)
 * **Instruções de acesso:**
-  * Abra o site e efetue o login;
-  * Acesse o menu principal e escolha a opção "Cadastros";
-  * Em seguida, escolha a opção "Contatos".
+  * Abra o site;
+  * Acesse o link "Criar nova conta" (abaixo do botão "Entrar");
+  * Em seguida, realize o cadastro.
 * **Tela da funcionalidade**:
+![image](https://github.com/user-attachments/assets/1626af3f-5df1-4e8a-b636-1413046f0f0a)
 
-![Tela de funcionalidade](images/exemplo-funcionalidade.png)
+Permite a alteração dos dados pessoais para o sistema
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários, quanto aos administradores da solução.
->
-> Inclua, para cada funcionalidade, itens como: (1) títulos e descrição da funcionalidade; (2) estrutura de dados associada; (3) o detalhe sobre as instruções de acesso e uso.
+* **Estrutura de dados:** [Contatos](#estrutura-de-dados---contatos)
+* **Instruções de acesso:**
+  * Abra o site;
+  * Após a criação do usuário, faça o login;
+  * Em seguida, ao ser redirecionado para a página principal, clique no perfil (personagem no canto superior direito da tela);
+  * Faça as alterações.
+* **Tela da funcionalidade**:
+![image](https://github.com/user-attachments/assets/e1566b43-c101-4fea-8989-ae2b53e5ddf8)
+
+Permite a exclusão dos dados pessoais para o sistema
+
+* **Estrutura de dados:** [Contatos](#estrutura-de-dados---contatos)
+* **Instruções de acesso:**
+  * Abra o site;
+  * Após a criação do usuário, faça o login;
+  * Em seguida, ao ser redirecionado para a página principal, selecione a barra de pesquisa e coloque a seguinte URL -> https://focustime-five.vercel.app/admin.html;
+  * Já está disponível para exclusão (confira nesse link -> https://focustime-9z8f.onrender.com/usuarios).
+* **Tela da funcionalidade**:
+![image](https://github.com/user-attachments/assets/47628d79-43f7-4328-bce2-7ee58dff8f44)
+
 
 ### Estruturas de dados
 
@@ -37,14 +53,16 @@ Contatos da aplicação
 
 ```json
   {
-    "id": 1,
-    "nome": "Leanne Graham",
-    "cidade": "Belo Horizonte",
-    "categoria": "amigos",
-    "email": "Sincere@april.biz",
-    "telefone": "1-770-736-8031",
-    "website": "hildegard.org"
-  }
+      "id": "586a",
+      "nome": "Matheus Henrique",
+      "idade": 18,
+      "cpf": "15975395175",
+      "telefone": "15975395175",
+      "email": "matheushbf14@gmail.com",
+      "password": "123456Ma",
+      "foto": "https://res.cloudinary.com/dqmrubnvg/image/upload/v1750995730/k6pdjdh2pmjw4u4abipj.jpg",
+      "dataCadastro": "2025-06-24T21:08:14.339Z"
+    }
   
 ```
 
@@ -54,25 +72,14 @@ Registro dos usuários do sistema utilizados para login e para o perfil do siste
 
 ```json
   {
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    email: "admin@abc.com",
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    login: "admin",
-    nome: "Administrador do Sistema",
-    senha: "123"
+      "id": "586a",
+      "nome": "Matheus Henrique",
+      "email": "matheushbf14@gmail.com",
+      "password": "123456Ma",
+      "foto": "https://res.cloudinary.com/dqmrubnvg/image/upload/v1750995730/k6pdjdh2pmjw4u4abipj.jpg",
   }
 ```
 
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente as estruturas de dados utilizadas na solução tanto para dados utilizados na essência da aplicação, quanto outras estruturas que foram criadas para algum tipo de configuração.
->
-> Nomeie a estrutura, coloque uma descrição sucinta e apresente um exemplo em formato JSON.
->
-> **Orientações:**
->
-> * [JSON Introduction](https://www.w3schools.com/js/js_json_intro.asp)
-> * [Trabalhando com JSON - Aprendendo desenvolvimento web | MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Objects/JSON)
 
 ### Módulos e APIs
 
@@ -80,28 +87,18 @@ Esta seção apresenta os módulos e APIs utilizados na solução.
 
 **Images**:
 
-* Unsplash - [https://unsplash.com/](https://unsplash.com/) ⚠️ EXEMPLO ⚠️
+* Cloudinary - [https://cloudinary.com/](https://cloudinary.com/)
 
 **Fonts:**
 
-* Icons Font Face - [https://fontawesome.com/](https://fontawesome.com/) ⚠️ EXEMPLO ⚠️
+* Icons Font Face - [https://fontawesome.com/](https://fontawesome.com/)
 
 **Scripts:**
 
-* jQuery - [http://www.jquery.com/](http://www.jquery.com/) ⚠️ EXEMPLO ⚠️
-* Bootstrap 4 - [http://getbootstrap.com/](http://getbootstrap.com/) ⚠️ EXEMPLO ⚠️
-
-> ⚠️ **APAGUE ESTA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente os módulos e APIs utilizados no desenvolvimento da solução. Inclua itens como: (1) frameworks, bibliotecas, módulos, etc. utilizados no desenvolvimento da solução; (2) APIs utilizadas para acesso a dados, serviços, etc.
+* Render - [[https://render.com/](https://render.com/)
 
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foram realizados.
-
-> **Links úteis**:
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando seu site no Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+Utilizamos o [Render](https://render.com/) para hospedar os dados do db.json, então tudo que estava rodando no LocalHost passou a rodar no link https://focustime-9z8f.onrender.com;
+E para a parte de Front-end utilizamos o [Vercel](https://vercel.com/), na qual busca as informações do último commit no GitHub.
